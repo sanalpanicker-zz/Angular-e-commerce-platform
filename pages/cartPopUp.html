@@ -1,0 +1,27 @@
+<div class="popUp">
+    <div class="popUpContainer">
+        <div class="cart" ng-repeat="item in cartItems">
+            <img src="./media/{{item.imgURL}}.jpg" />
+            <div class="itemDetail">
+                <p>
+                    <h1>{{item.title}}</h1>
+                </p>
+                <p>x {{item.cartCount}}</p>
+                <p>{{item.brand}}</p>
+                <p>${{item.price}}</p>
+
+            </div>
+            <div class="remove">X</div>
+
+        </div>
+        <div ng-if="cartItems.length == 0">Your cart is empty</div>
+
+    </div>
+    <div class="total" ng-if="cartItems.length != 0" class="total">
+        <span class="text left">Total</span> <span class="amount right">{{totalAmount}}<span>
+        </div>
+    <div class="buttonSec">
+            <a class="btn" ng-click="goToPage('cart')">VIEW CART</a>
+            <a class="btn" ng-click="addCart(p.imgURL)">CHECKOUT</a>
+        </div>
+</div>

@@ -1,0 +1,46 @@
+header {
+    max-height: 70px;
+}
+
+#logo {
+    display: inline-block;
+}
+
+#logo img {
+    width: 115px;
+    height: 55px
+}
+
+ul.mainMenu {
+    text-align: center;
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav {
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+}
+
+.myCart {
+    display: inline-block;
+    width: 9%;
+    height: 63px;
+    vertical-align: middle;
+}

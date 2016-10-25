@@ -1,0 +1,23 @@
+<section id="productDetailContainer" class="flex-container">
+    <div id="productImage" class="flex-item" style="background-image:url('./media/{{productInfo.image}}')">
+        <!--<img src="./media/{{productInfo.image}}" />-->
+    </div>
+    <div id="productDesc" class="flex-item">
+        <div class="topSec">
+            <h4 class="small" ng-bind=productInfo.brand></h4><br>
+            <h1 call="large" ng-bind=productInfo.title></h1> <br>
+            <h2 class="medium" ng-bind=productInfo.price></h2><br>
+            <p class="small" ng-bind=productInfo.description></p><br>
+        </div>
+        <div class="pbutton">
+            <div id="incrementer">
+                <div class="number">{{icount}}</div>
+                <div class="ibuttons">
+                    <div class="add" ng-click="incrementCount(icount)">+</div>
+                    <div class="sub">-</div>
+                </div>
+            </div>
+            <span class="right"><a class="btn" ng-click="addCart(productInfo.imgURL,icount)">ADD TO CART</a></span>
+        </div>
+    </div>
+</section>

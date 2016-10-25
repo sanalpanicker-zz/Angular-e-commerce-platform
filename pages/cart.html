@@ -1,0 +1,48 @@
+<div id="cartContainer">
+    <div id="cartWrapper">
+        <div id="cartHeader">
+            <div class="inline ph">PRODUCT</div>
+            <div class="inline qtah">
+                <div class="block">QUANTITY</div>
+                <div class="block">TOTAL</div>
+                <div class="block">ACTION</div>
+            </div>
+        </div>
+        <div class="scrollpanel">
+            <div id="cartBody" ng-repeat="item in cartItems">
+                <div id="productInfo" class="inline">
+                    <img src="./media/{{item.imgURL}}.jpg" alt="">
+                    <div id="productDetail" class="inline">
+                        <p>{{item.title}}</p>
+                        <p>{{item.brand}}</p>
+                    </div>
+                </div>
+                <div id="shoppingDetail" class="inline">
+                    <div class="block" id="incrementer">
+                        <div class="number">{{item.cartCount}}</div>
+                        <div class="ibuttons">
+                            <div class="add" ng-click="addCart(item.imgURL)">+</div>
+                            <div class="sub">-</div>
+                        </div>
+                    </div>
+                    <div class="block">{{ getTotalPrice(item.cartCount,item.price) }}</div>
+                    <div class="block">X</div>
+                </div>
+            </div>
+        </div>
+        <div id="cartSummary">
+            <div id="spacer"></div>
+            <div id="cartDetails">
+                <div>CART OVERVIEW</div>
+                <div><span class="left">SUBTOTAL</span><span class="right">{{totalAmount}}</span></div>
+                <div><span class="left">TOTAL</span><span class="right">{{totalAmount}} CAD</span></div>
+            </div>
+        </div>
+        <div id="button">
+            <span ng-click="goToPage('')"><u>CONTINUE SHOPPING</u></span>
+            <a class="btn" ng-click="addCart(p.imgURL)">CHECKOUT</a>
+            <div>
+            </div>
+        </div>
+    </div>
+</div>

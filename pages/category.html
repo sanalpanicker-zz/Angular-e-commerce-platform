@@ -1,0 +1,28 @@
+<section id="topBanner">
+    <div id="leftPlate"></div>
+    <div id="categoryNote">
+        <article class="cNoteAlign">
+            <u>
+                <h2>Plates</h2>
+            </u><br>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </article>
+    </div>
+    <div id="rightPlate"></div>
+    <div id="productList" class="flex-container">
+        <div class="flex-item" ng-repeat="p in productDetails">
+            <img src="./media/{{p.imgURL}}.jpg" /><br> {{p.brand}}
+            <br> {{p.title}}
+            <br> {{p.price}}
+            <div id="productTileOverlay">
+
+                <a class="btn" ng-click="goToPage('product/'+ p.imgURL)">VIEW DETAILS</a><br>
+                <a class="btn" ng-click="addCart(p.imgURL)">ADD TO CART</a>
+
+            </div>
+        </div>
+
+        <div>
+</section>
+<footer></footer>

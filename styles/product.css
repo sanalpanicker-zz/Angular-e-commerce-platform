@@ -1,0 +1,52 @@
+#productImage {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    max-height: 518px;
+    max-width: 518px;
+    width:40%;
+}
+
+#productDetailContainer {
+    padding-top: 5%;
+}
+
+#productDetailContainer.flex-container {
+    justify-content: center;
+}
+
+#productDesc {
+    width: 30%;
+}
+
+.pbutton {
+    padding-right: 19px;
+    margin-left: 36px;
+    margin-right: 36px;
+    border-top: 1px solid gainsboro;
+    overflow: hidden;
+    height: 57px;
+}
+
+.pbutton span {
+    margin-top: 22px;
+    display: inline-block;
+}
+
+.topSec {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.small {
+    color: gainsboro;
+    font-size: small;
+}
+
+.larger {
+    font-size: xx-large;
+}
+
+.medium {
+    font-size: medium;
+}
